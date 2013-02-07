@@ -496,7 +496,9 @@ ___
 
 ### Resource Style Rules
 
-All resources should be categorised. This makes it easier to search for a resource and to understand what the resource is being used for.
+Try to name files so that related assets will group together inside a directory when they are sorted alphabetically.
+
+All resources should be categorised which makes it easier to search for a resource and to understand what the resource is being used for.
 
 #### Animation Resources
 
@@ -504,31 +506,60 @@ All resources should be categorised. This makes it easier to search for a resour
 
 #### Drawable Resources
 
-bg_<category_name>.xml
-ic_<category_name>.xml
-img_<category_name>.xml
+It helps to use a common prefix for each type of drawable resource.
+
+Backgroud images should begin with **bg**, followed by a type and name. For example:
+
+        bg_<type_>name.xml
+        
+Icons should begin with **ic**, followed by a type and name. For example:
+
+        ic_<type_>name.xml
+
+Images should begin with **img**, followed by a type and name. For example
+
+        img_<type_>name.xml
+
+*Note:* You don't always require a type of a drawable. The following table shows the different prefixes for Icons:
+
+|Asset Type|Prefix|Example|
+|:--:|:--:|:--:|
+|Icons|ic_|ic_star.png|
+|Launcher icons|ic_launcher|ic_launcher_calendar.png|
+|Menu icons and Action Bar icons|ic_menu|ic_menu_archive.png|
+|Status bar icons|ic_stat_notify|ic_stat_notify_msg.png|
+|Tab icons|ic_tab|ic_tab_recent.png|
+|Dialog icons|ic_dialog|ic_dialog_info.png|
 
 #### Layout Resources
 
-activity_<activity_name>.xml
-fragment_<fragment_name>.xml
-list_item_<category_name>.xml
-dialog_<category_name>.xml
-map_<category_name>.xml
+It helps to use a common prefix for each type of layout resources.
+
+
+        activity_<activity_name>.xml
+        
+        fragment_<fragment_name>.xml
+
+        list_item_<category_name>.xml
+
+        dialog_<category_name>.xml
+
+        map_<category_name>.xml
 
 #### Menu Resources
 
-menu_<category_name>.xml
+        menu_<category_name>.xml
 
 #### String Resources
 
-strings_<category_name>.xml
-string_arrays_<category_name>.xml
+        strings_<category_name>.xml
+
+        string_arrays_<category_name>.xml
 
 #### Style Resources
 
-styles_<category_name>.xml
+        styles_<category_name>.xml
 
 #### Other Resources
 
-settings_<category_name>.xml
+        settings_<category_name>.xml
