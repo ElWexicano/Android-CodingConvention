@@ -533,8 +533,7 @@ Images should begin with **img**, followed by a type and name. For example
 
 #### Layout Resources
 
-It helps to use a common prefix for each type of layout resources.
-
+It helps to use a common prefix for each type of layout xml file. For instances layout xml files for an activity should be preceded with "activity_", below is some examples of this.
 
         activity_<activity_name>.xml
         
@@ -545,6 +544,68 @@ It helps to use a common prefix for each type of layout resources.
         dialog_<category_name>.xml
 
         map_<category_name>.xml
+
+It also helps to use a common prefix for the id's for each type of layout resource. Below are some examples of id's;
+
+LinearLayout id's should be preceded with "linear_", followed by the name of the linear layout:
+
+        android:id="@+id/linear_search_detail"
+
+RelativeLayout id's should be preceded with "relative_", followed by the name of the relative layout:
+
+        android:id="@+id/relative_search_results"
+
+FrameLayout id's should be preceded with "frame_", followed by the name of the frame layout:
+
+        android:id="@+id/frame_house_detail"
+
+Fragment id's should be preceded with "fragment_", followed the its name:
+
+        android:id="@+id/fragment_house_list"
+
+The same rule applies to naming of id's for input controls. Below are some examples of id's for various input controls;
+
+Button id's should be preceded with "button_", followed by the name of the button:
+
+        android:id="@+id/button_search"
+
+ImageButton id's should be preceded with "imagebutton_", followed by the name of the image button:
+
+        android:id="@+id/image_button_search"
+
+EditText id's should be preceded with "edit_", followed by the name of the edit text:
+
+        android:id="@+id/edit_email_address"
+
+TextView id's should be preceded with "text_", followed by the name of the text view:
+
+        android:id="@+id/text_search_result"
+
+AutoCompleteTextView id's should be preceded with "auto_complete_", followed by the name of the auto complete text view:
+
+        android:id="@+id/auto_complete_country"
+
+Checkbox id's should be preceded with "checkbox_", followed by the name of the checkbox:
+
+        android:id="@+id/checkbox_cheese"
+
+RadioGroup id's should be preceded with "radio_group_", followed by the name of the radio group:
+
+        android:id="@+id/radio_group_superheroes"
+
+RadioButton id's should be preceded with "radio_", followed by the name of the radio button:
+
+        android:id="@+id/radio_batman"
+
+ToggleButton id's should be preceded with "toggle_button_", followed by the name of the toggle button:
+
+        android:id="@+id/toggle_button_wifi"
+
+Spinner id's should be preceded with "spinner_", followed by the name of the spinner:
+
+        android:id="@+id/spinner_superheroes"
+
+And so on....
 
 #### Menu Resources
 
